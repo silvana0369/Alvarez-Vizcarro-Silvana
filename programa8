@@ -1,0 +1,5 @@
+if nodoActual.esHoja():
+  if nodoActual == nodoActual.padre.hijoIzquierdo:
+    nodoActual.padre.hijoIzquierdo = None
+  else:
+    nodoActual.padre.hijoDerecho = None
