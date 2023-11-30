@@ -1,0 +1,16 @@
+class arbol(object):
+  def __init__(self):
+    self.der = none
+    self.izq = none
+    self.dato = none
+raiz = arbol ()
+raiz.dato = ("raiz")
+raiz.izq = arbol()
+raiz.izq.dato = ("izquierda")
+raiz.der = arbol ()
+raiz.der.dato =("derecha")
+
+raiz.izq.izq = arbol()
+raiz.izq.izq.dato = ("izquierda 2")
+raiz.izq.der = arbol()
+raiz.izq.der.dato = ("izquierda - derecha")
