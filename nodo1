@@ -1,0 +1,17 @@
+def agregar(self,clave,valor):
+  if self.raiz:
+     self._agregar(clave,valor,self.raiz)
+  else:
+     self.raiz = NodoArbol(clave,valor)
+  self.tamano = self.tamano + 1
+def _agregar(self,clave,valor,nodoActual):
+  if clave < nodoActual.clave:
+     if nodoActual.tieneHijoIzquierdo():
+         self._agregar(clave,valor,nodoActual.hijoIzquierdo)
+    else:
+         nodoActual.hijoIzquierdo = NodoArbol(clave,valor,padre=nodoActual)
+ else:
+     if nodoActual.tieneHijoDerecho():
+         self._agregar(clave,valor,nodoActual.hijoDerecho)
+   else:
+         nodoActual.hijoDerecho = NodoArbol(clave,valor,padre=nodoActual)
