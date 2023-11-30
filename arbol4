@@ -1,0 +1,8 @@
+class arbol(object):
+  def __init__(self):
+    self.der = none
+    self.der2 = none
+    self.cent = none
+    self.izq = none
+    self.izq2 = none
+    self.dato = none
