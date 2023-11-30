@@ -1,0 +1,15 @@
+def eliminar(self,clave):
+  if self.tamano > 1:
+    nodoAEliminar = self._obtener(clave,self.raiz)
+    if nodoAEliminar:
+      self.remover(nodoAEliminar)
+      self.tamano = self.tamano-1
+    else:
+      raise KeyError('Error, la clave no está en el árbol')
+  elif self.tamano == 1 and self.raiz.clave == clave:
+    self.raiz = None
+    self.tamano = self.tamano - 1
+  else:
+    raise KeyError('Error, la clave no está en el árbol')
+def __delitem__(self,clave):
+    self.eliminar(clave)
