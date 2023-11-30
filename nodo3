@@ -1,0 +1,5 @@
+elif nodoActual.tieneAmbosHijos(): #interior
+     suc = nodoActual.encontrarSucesor()
+     suc.empalmar()
+     nodoActual.clave = suc.clave
+     nodoActual.cargaUtil = suc.cargaUtil
